@@ -1,7 +1,13 @@
-
+import { CarRentForm } from "./components/CarRentForm";
+import { Header } from "./components/Header";
+import { GlobalStyles } from "./GlobalStyles";
 function App() {
   return (
-    <h1>App</h1>
+    <>
+      <GlobalStyles />
+      <Header />
+      <CarRentForm />
+    </>
   );
 }
 
