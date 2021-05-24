@@ -1,7 +1,5 @@
 // import { useState } from "react";
 import styled from "styled-components";
-import Button from "@material-ui/core/Button";
-// import { Formik, Form } from "formik";
 import { Address } from "./StepForm/Address";
 // import { Contact } from "./StepForm/Contact";
 
@@ -18,11 +16,11 @@ export const CarRentForm = () => {
       <StyledForm>
         <Address />
       </StyledForm>
-      <ButtonBox>
+      {/* <ButtonBox>
         <Button color="primary" variant="contained">
           Submit
         </Button>
-      </ButtonBox>
+      </ButtonBox> */}
       {/* <ButtonBox style={{ marginTop: "1rem" }}>
         <Button
           color="secondary"
@@ -47,11 +45,4 @@ const StyledForm = styled.div`
   justify-content: center;
   margin-top: 5rem;
 `;
-const ButtonBox = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  Button {
-    width: 22%;
-  }
-`;
+
