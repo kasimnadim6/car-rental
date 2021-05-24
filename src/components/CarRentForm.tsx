@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 import { Address } from "./StepForm/Address";
 // import { Contact } from "./StepForm/Contact";
 
-const steps = ["address", "contact", "review", "submit"];
+// const steps = ["address", "contact", "review", "submit"];
 
 export const CarRentForm = () => {
   // const [step, navigation] = useState({
