@@ -41,7 +41,6 @@ export const Address = () => {
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      d
       onSubmit={onSubmit}
     >
       {() => (
@@ -85,7 +84,6 @@ export const Address = () => {
                 label="Number of Travellers"
                 name="passengers"
                 type="number"
-                // InputProps={{ inputProps: { min: 0, max: 6 } }}
                 variant="outlined"
                 component={TextFormField}
               />
@@ -96,7 +94,6 @@ export const Address = () => {
                 color="primary"
                 variant="contained"
                 style={{ width: "100%" }}
-                // disabled={!(formik.isValid && formik.dirty)}
               >
                 Submit
               </Button>
