@@ -1,17 +1,17 @@
-import { useState } from "react";
+// import { useState } from "react";
 import styled from "styled-components";
 import Button from "@material-ui/core/Button";
-import { Formik, Form } from "formik";
+// import { Formik, Form } from "formik";
 import { Address } from "./StepForm/Address";
-import { Contact } from "./StepForm/Contact";
+// import { Contact } from "./StepForm/Contact";
 
 const steps = ["address", "contact", "review", "submit"];
 
 export const CarRentForm = () => {
-  const [step, navigation] = useState({
-    steps,
-    initialStep: 0,
-  });
+  // const [step, navigation] = useState({
+  //   steps,
+  //   initialStep: 0,
+  // });
 
   return (
     <>

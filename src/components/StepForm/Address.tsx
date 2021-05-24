@@ -9,6 +9,8 @@ export const Address = () => {
     { label: "Sedan", value: "sedan" },
     { label: "SUV", value: "suv" },
   ];
+
+  
   return (
     <Container maxWidth="sm">
       <Box>
@@ -33,22 +35,11 @@ export const Address = () => {
           required
         />
       </Box>
-      {/* <TextField
-        label="Enter Car Type"
-        name="carType"
-        // value={state}
-        // onChange={setForm}
-        margin="normal"
-        variant="outlined"
-        autoComplete="off"
-        fullWidth
-        required
-      /> */}
       <TextField
         select
         label="Enter Car Type"
-        //   value={cars}
-        //   onChange={handleChange}
+          value={''}
+          // onChange={inputChangeHandler}
         // helperText="Please select your currency"
         variant="outlined"
         fullWidth
@@ -63,7 +54,7 @@ export const Address = () => {
         label="Number of Travellers"
         name="travellers"
         type="number"
-        InputProps={{ inputProps: { min: 0, max: 10 } }}
+        InputProps={{ inputProps: { min: 0, max: 4 } }}
         // value={zip}
         // onChange={setForm}
         margin="normal"
