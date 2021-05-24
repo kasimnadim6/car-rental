@@ -2,6 +2,7 @@ import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import styled from "styled-components";
+import { withStyles } from "@material-ui/core/styles";
 
 export const Address = () => {
   const cars = [
@@ -13,7 +14,7 @@ export const Address = () => {
   return (
     <Container maxWidth="sm">
       <Box>
-        <TextField
+        <WithStylesTextField
           label="Source Location"
           name="sourceLoc"
           // value={address}
@@ -23,7 +24,7 @@ export const Address = () => {
           autoComplete="off"
           required
         />
-        <TextField
+        <WithStylesTextField
           label="Destination"
           name="destination"
           // value={city}
@@ -34,11 +35,11 @@ export const Address = () => {
           required
         />
       </Box>
-      <TextField
+      <WithStylesTextField
         select
         label="Enter Car Type"
-          value={''}
-          // onChange={inputChangeHandler}
+        value={""}
+        // onChange={inputChangeHandler}
         // helperText="Please select your currency"
         variant="outlined"
         fullWidth
@@ -48,8 +49,8 @@ export const Address = () => {
             {car.label}
           </MenuItem>
         ))}
-      </TextField>
-      <TextField
+      </WithStylesTextField>
+      <WithStylesTextField
         label="Number of Travellers"
         name="travellers"
         type="number"
@@ -68,4 +69,12 @@ export const Address = () => {
 const Box = styled.div`
   display: flex;
   justify-content: space-between;
+  TextField {
+    width: 50%;
+  }
 `;
+const WithStylesTextField = withStyles({
+  root: {
+    minWidth: "47%",
+  },
+})(TextField);

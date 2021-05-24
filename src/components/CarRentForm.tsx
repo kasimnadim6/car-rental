@@ -45,6 +45,7 @@ export const CarRentForm = () => {
 const StyledForm = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 5rem;
 `;
 const ButtonBox = styled.div`
   display: flex;
